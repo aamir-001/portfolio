@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aamir Achhava | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        a {
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #a5b4fc;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* Sticky section overlap effect */
+        .sticky-section {
+            position: sticky;
+            top: 0;
+            background-color: #0a0a0a;
+            z-index: 1;
+        }
+
+        .sticky-section:nth-of-type(2) { z-index: 2; }
+        .sticky-section:nth-of-type(3) { z-index: 3; }
+        .sticky-section:nth-of-type(4) { z-index: 4; }
+        .sticky-section:nth-of-type(5) { z-index: 5; }
+        .sticky-section:nth-of-type(6) { z-index: 6; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <section class="sticky-section min-h-screen flex items-center justify-center px-6 py-20 pb-32">
+        <div class="max-w-6xl w-full">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-4" style="letter-spacing: -0.03em;">
+                        Aamir Achhava
+                    </h1>
+                    <p class="text-2xl md:text-3xl text-gray-400 mb-6 font-light">
+                        CS Graduate Student @ NYU
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                        Experience with backend and database infrastructure, blockchain and smart contract development, trading systems, and algorithmic trading. Board Member at NYU Blockchain Lab.
+                    </p>
+
+                    <div class="flex gap-6 justify-center md:justify-start text-2xl mb-8">
+                        <a href="https://github.com/aamir-001" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aamir-achhava-8821a322a" target="_blank" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ma8616@nyu.edu" class="text-gray-400 hover:text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-3 flex-wrap justify-center md:justify-start">
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Solidity</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Blockchain</span>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <img src="portfolio.png" alt="Aamir Achhava" class="w-[280px] h-[280px] rounded-full object-cover mx-auto md:mx-0 border-2 border-gray-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="sticky-section px-6 py-12 max-w-6xl mx-auto">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- Tabdeel (Aptos StableSPY) -->
+            <div class="card rounded-xl p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="text-2xl font-bold">Tabdeel</h3>
+                    <a href="https://github.com/aamir-001/stable-SPY-aptos" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-4 leading-relaxed">
+                    Blockchain-based investment platform enabling global access to U.S. equities with multi-currency support through USDC and currency-pegged tokens.
+                </p>
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="tag">Aptos Move</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">USDC</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• Built 13+ smart contracts for tokenized equities with mint/burn settlement</li>
+                    <li>• Real-time price tracking and portfolio analytics</li>
+                    <li>• REST APIs for trading platform backend</li>
+                </ul>
+            </div>
+
+            <!-- Instant Markets -->
+            <div class="card rounded-xl p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="text-2xl font-bold">Instant Markets</h3>
+                    <a href="https://github.com/aamir-001/mbc-hack" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-4 leading-relaxed">
+                    Gasless prediction-market DApp using Coinbase CDP Embedded Wallets and paymaster-sponsored transactions.
+                </p>
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="tag">Coinbase CDP</span>
+                    <span class="tag">Base L2</span>
+                    <span class="tag">Solidity</span>
+                    <span class="tag">Polymarket MCP</span>
+                    <span class="tag">Circle X-402</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• Deployed Solidity smart contracts for market creation and pooled USDC staking</li>
+                    <li>• AI-assisted trustless outcome resolution</li>
+                    <li>• Transact-through-Twitter using the X-402 payment protocol</li>
+                </ul>
+            </div>
+
+            <!-- wepair.live -->
+            <div class="card rounded-xl p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="text-2xl font-bold">wepair.live</h3>
+                    <a href="https://github.com/aamir-001/wepair.live" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-4 leading-relaxed">
+                    Real-time video and text chat application with peer-to-peer communication. Deployed on AWS EC2 handling high traffic loads.
+                </p>
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">WebRTC</span>
+                    <span class="tag">Socket.io</span>
+                    <span class="tag">AWS EC2</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• 1,500+ requests/second with 3.5 MB/s throughput</li>
+                    <li>• Processed 47,000 requests in 30 seconds under load</li>
+                    <li>• WebRTC P2P communication without media server</li>
+                </ul>
+            </div>
+
+            <!-- Smart Productivity Assistant -->
+            <div class="card rounded-xl p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="text-2xl font-bold">Smart Productivity Assistant</h3>
+                    <a href="https://github.com/UsaidMalik/AEA/tree/ama" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-4 leading-relaxed">
+                    AI-powered productivity tracker monitoring user behavior and facial expressions in real-time to generate actionable insights.
+                </p>
+                <div class="flex gap-2 flex-wrap mb-4">
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">AnythingLLM</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• Real-time facial expression analysis and behavior tracking</li>
+                    <li>• Multi-source data ingestion from camera, web, and app activity</li>
+                    <li>• Natural language querying of productivity metrics via LLM integration</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="sticky-section px-6 py-20 max-w-6xl mx-auto">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="space-y-8">
+
+            <!-- Numeraxial -->
+            <div class="border-l-2 border-gray-700 pl-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between mb-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Backend Developer Intern</h3>
+                        <p class="text-gray-400">Numeraxial LLC</p>
+                    </div>
+                    <p class="text-gray-500">May 2025 – Aug 2025</p>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-1 mt-3">
+                    <li>• Built FastAPI microservices with Redis-backed Celery workers to run asynchronous RL model training, reducing API response latency by 70%</li>
+                    <li>• Implemented RedisTimeSeries cache, resulting in an 85% reduction in external API calls</li>
+                    <li>• Engineered end-to-end API flow for portfolio creation and analysis, supported by structured PostgreSQL schemas</li>
+                </ul>
+            </div>
+
+            <!-- Odoo -->
+            <div class="border-l-2 border-gray-700 pl-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between mb-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Software Developer</h3>
+                        <p class="text-gray-400">Odoo</p>
+                    </div>
+                    <p class="text-gray-500">Jan 2023 – Feb 2024</p>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-1 mt-3">
+                    <li>• Developed and optimized automated Python and SQL database migration scripts, improving data migration accuracy and reducing custom view migration failures by 30%</li>
+                    <li>• Redesigned the database schema for the product subscription model, optimizing indexing and storage strategies to reduce the storage consumption by 10%</li>
+                    <li>• Solved over 80 migration tickets, collaborating with cross-functional teams to address client-specific migration challenges</li>
+                </ul>
+            </div>
+
+            <!-- Xoriant -->
+            <div class="border-l-2 border-gray-700 pl-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between mb-2">
+                    <div>
+                        <h3 class="text-xl font-bold">Software Engineering Intern</h3>
+                        <p class="text-gray-400">Xoriant</p>
+                    </div>
+                    <p class="text-gray-500">Feb 2022 – Jun 2022</p>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-1 mt-3">
+                    <li>• Built RESTful APIs using Spring MVC to deliver video tutorials and course content</li>
+                    <li>• Implemented MySQL-backed data storage with validation and error-handling for 2,500+ employees</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- All Projects -->
+    <section class="sticky-section px-6 py-20 max-w-6xl mx-auto">
+        <h2 class="section-title">All Projects</h2>
+
+        <div class="space-y-4">
+
+            <!-- Post-Earnings Analysis -->
+            <div class="card rounded-xl p-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl font-bold">Post-Earnings Stock Performance Analysis System</h3>
+                            <a href="https://github.com/aamir-001/cpp-Post-Earnings-Stock-Performance-Analysis-System" target="_blank" class="text-gray-400 hover:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400 mb-3">
+                            C++ application analyzing Russell 3000 earnings announcements' impact on stock prices with bootstrapping analysis for 90+ stocks.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">C++</span>
+                            <span class="tag">libcurl</span>
+                            <span class="tag">gnuplot</span>
+                            <span class="tag">AWS EC2</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Search Engine -->
+            <div class="card rounded-xl p-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl font-bold">Desktop Search Engine</h3>
+                            <a href="https://github.com/aamir-001/web-crawler" target="_blank" class="text-gray-400 hover:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400 mb-3">
+                            Multithreaded web crawler with indexing and search capabilities. Complete search engine with TF-IDF ranking stored in SQLite.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">JSoup</span>
+                            <span class="tag">Multithreading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crypto Arbitrage Detection -->
+            <div class="card rounded-xl p-6">
+                <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl font-bold">Crypto Arbitrage Detection Engine</h3>
+                            <a href="https://github.com/aamir-001/arbitrage-watch" target="_blank" class="text-gray-400 hover:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400 mb-3">
+                            High-performance arbitrage detection engine scanning 5+ exchanges in parallel using Python asyncio and CCXT APIs.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Python</span>
+                            <span class="tag">asyncio</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">CCXT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Contact -->
+    <section class="sticky-section px-6 py-20 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Education -->
+            <div>
+                <h2 class="section-title">Education</h2>
+                <div class="card rounded-xl p-6">
+                    <h3 class="text-xl font-bold mb-2">New York University</h3>
+                    <p class="text-gray-400 mb-2">M.S. in Computer Science</p>
+                    <p class="text-gray-500 mb-3">Sep 2024 – May 2026 | GPA: 3.9/4.0</p>
+                    <p class="text-sm text-gray-300">Board Member: NYU Blockchain Lab</p>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h2 class="section-title">Contact</h2>
+                <div class="card rounded-xl p-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-gray-400"></i>
+                            <a href="mailto:ma8616@nyu.edu" class="text-gray-300">ma8616@nyu.edu</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-gray-400"></i>
+                            <span class="text-gray-300">+1 (929) 643-8599</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-github text-gray-400"></i>
+                            <a href="https://github.com/aamir-001" target="_blank" class="text-gray-300">github.com/aamir-001</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-linkedin text-gray-400"></i>
+                            <a href="https://www.linkedin.com/in/aamir-achhava-8821a322a" target="_blank" class="text-gray-300">linkedin.com/in/aamir-achhava</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-6 py-12 text-center text-gray-500 border-t border-gray-800">
+        <p>&copy; 2025 Aamir Achhava. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
