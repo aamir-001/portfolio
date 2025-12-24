@@ -87,6 +87,31 @@
         .sticky-section:nth-of-type(4) { z-index: 4; }
         .sticky-section:nth-of-type(5) { z-index: 5; }
         .sticky-section:nth-of-type(6) { z-index: 6; }
+
+        /* Smooth scrolling for content */
+        .section-content {
+            max-height: 70vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .section-content::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .section-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .section-content::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.3);
+            border-radius: 2px;
+        }
+
+        .section-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(156, 163, 175, 0.5);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -130,7 +155,8 @@
     <section class="sticky-section px-6 py-12 pb-[50vh] max-w-6xl mx-auto">
         <h2 class="section-title">Featured Projects</h2>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="section-content">
+            <div class="grid md:grid-cols-2 gap-6">
 
             <!-- Tabdeel (Aptos StableSPY) -->
             <div class="card rounded-xl p-6">
@@ -231,13 +257,15 @@
             </div>
 
             </div>
+        </div>
     </section>
 
     <!-- Experience -->
     <section class="sticky-section px-6 py-20 pb-[50vh] max-w-6xl mx-auto">
         <h2 class="section-title">Experience</h2>
 
-        <div class="space-y-8">
+        <div class="section-content">
+            <div class="space-y-8">
 
             <!-- Numeraxial -->
             <div class="border-l-2 border-gray-700 pl-6">
@@ -287,13 +315,15 @@
             </div>
 
             </div>
+        </div>
     </section>
 
     <!-- All Projects -->
     <section class="sticky-section px-6 py-20 pb-[50vh] max-w-6xl mx-auto">
         <h2 class="section-title">All Projects</h2>
 
-        <div class="space-y-4">
+        <div class="section-content">
+            <div class="space-y-4">
 
             <!-- Post-Earnings Analysis -->
             <div class="card rounded-xl p-6">
@@ -367,6 +397,7 @@
             </div>
 
             </div>
+        </div>
     </section>
 
     <!-- Education & Contact -->
